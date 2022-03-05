@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { Container ,Row,Col,Card ,Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import bday from '../../Assets/Images/bday-541.gif'
+
 export default class Homepage extends Component {
 
 componentDidMount(){
   const uri =""
-  
+
 }
 
   render() {
@@ -14,28 +16,29 @@ componentDidMount(){
         id:1 ,
         name:'BarthDay Reminder',
         link:'/reminder',
-        img:'',
-        discreption:' Some quick example text to build on the card title and make up the bulk of .'
+        imageurl: require('../../Assets/Images/bday-541.gif') ,
+        pic:'../../Assets/Images/bday-541.gif',
+        discreption:' use: / functional component /class component / hook .'
       },
       {
         id:2 ,
-        name:'BarthDay Reminder',
-        link:'',
-        img:'',
-        discreption:' Some quick example text to build on the card title and make up the bulk of .'
+        name:'Toure Packeg',
+        link:'/tour',
+        imageurl: require('../../Assets/Images/international.jpg') ,
+        discreption:' use: api / Hooks / awit function.'
       },
       {
         id:3 ,
         name:'BarthDay Reminder',
         link:'',
-        img:'',
+        pic:'',
         discreption:' Some quick example text to build on the card title and make up the bulk of .'
       },
       {
         id:4 ,
         name:'BarthDay Reminder',
         link:'',
-        img:'',
+        pic:'',
         discreption:' Some quick example text to build on the card title and make up the bulk of .'
       }
     ]
@@ -50,7 +53,8 @@ componentDidMount(){
            
                   <Card style={{ width: '18rem' }} >
                     <Link to={item.link}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Img variant="top" src={item.imageurl}/>
+                  {/* <Card.Img variant="top" src={bday}/> */}
                   <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
                     <Card.Text>
