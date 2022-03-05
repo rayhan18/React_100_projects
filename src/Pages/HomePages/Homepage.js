@@ -3,14 +3,17 @@ import { Container ,Row,Col,Card ,Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 export default class Homepage extends Component {
 
-
+componentDidMount(){
+  const uri =""
+  
+}
 
   render() {
     const cards=[
       {
         id:1 ,
         name:'BarthDay Reminder',
-        link:'',
+        link:'/reminder',
         img:'',
         discreption:' Some quick example text to build on the card title and make up the bulk of .'
       },
