@@ -1,5 +1,5 @@
 
-export default  [
+export default [
     {
       id: 1,
       name: 'Bertie Yates',

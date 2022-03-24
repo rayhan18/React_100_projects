@@ -29,8 +29,8 @@ componentDidMount(){
       },
       {
         id:3 ,
-        name:'BarthDay Reminder',
-        link:'',
+        name:'Side bar',
+        link:'/sidebar',
         pic:'',
         discreption:' Some quick example text to build on the card title and make up the bulk of .'
       },
