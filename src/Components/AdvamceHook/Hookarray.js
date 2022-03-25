@@ -16,13 +16,13 @@ export default function Hookarray() {
 
   return (
     <div className='container'>
-        <h2>Remove item</h2>
+        <h2>Remove item Hook array</h2>
        {people.map((person) => {
         const { id, name,image } = person;
         return (
           <div key={id} className='border'>
             <h4>{name}</h4>
-            <img style={{width:'100px'}} src={image}/>
+            <img style={{width:'100px'}} src={image} alt=""/>
             <button onClick={() => removeItem(id)}>remove</button>
           </div>
         );
