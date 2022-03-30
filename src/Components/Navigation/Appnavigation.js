@@ -13,7 +13,7 @@ export default function Appnavigation() {
       <Nav.Link href="/hooks">Hooks</Nav.Link>
       <Nav.Link href="#pricing">Pricing</Nav.Link>
       <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1"> Barth Day</NavDropdown.Item>
+        <NavDropdown.Item href="/userlogin">MultiReturns</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">ture</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
         {/* <NavDropdown.Divider />
@@ -23,8 +23,10 @@ export default function Appnavigation() {
     <Nav>
       <Nav.Link href="#deets">
           <img style={{width:'50px',borderRadius:'50%'}} src={me} alt="Developer Rayhan"/>
+        
       </Nav.Link>
-     
+      <Nav.Link href="#">Login</Nav.Link>
+          <Nav.Link href="#">Register</Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container>
