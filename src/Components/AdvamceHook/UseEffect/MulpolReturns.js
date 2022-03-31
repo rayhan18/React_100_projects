@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import { Container } from 'react-bootstrap';
+import ControlledInputs from './Controlled-inputs';
 import Toggole from './Toggole';
 
 
@@ -47,6 +48,7 @@ export default function MulpolReturns() {
        <h1>{user}</h1> <hr/>
 
        <Toggole/>
+       <ControlledInputs/>
        </Container>
     </div>
   )

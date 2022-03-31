@@ -8,10 +8,8 @@ export default function Toggole() {
     <div>
         <h3>Toggole button</h3>
         <h3>{text || 'Rayhan Molla'}</h3>
-<Button onClick={()=> setIserror(!isError)}>Toggole</Button>
-<button className='btn' onClick={() => setIserror(!isError)}>
-        toggle error
-      </button>
+      <Button onClick={()=> setIserror(!isError)}>Toggole</Button>
+
 {isError && <h3>isError ....</h3>}
 {isError ? (
     <h3> ooh heaar is error ....</h3>

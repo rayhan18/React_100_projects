@@ -3,6 +3,7 @@ import BasicUsestate from '../Components/AdvamceHook/BasicUsestate'
 import { Counter } from '../Components/AdvamceHook/Counter'
 import Hookarray from '../Components/AdvamceHook/Hookarray'
 import ObjUseState from '../Components/AdvamceHook/ObjUseState'
+import ShowHide from '../Components/AdvamceHook/UseEffect/3-show-hide'
 import BasicUseeffect from '../Components/AdvamceHook/UseEffect/BasicUseeffect'
 import Fatchdata from '../Components/AdvamceHook/UseEffect/Fatchdata'
 import Useeffect2 from '../Components/AdvamceHook/UseEffect/Useeffect-2'
@@ -19,6 +20,7 @@ export default function HooksPage() {
         <BasicUseeffect/>
         <Useeffect2/>
         <Fatchdata/>
+        <ShowHide/>
     </div>
   )
 }
