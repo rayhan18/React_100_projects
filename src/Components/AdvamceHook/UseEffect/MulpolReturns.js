@@ -1,5 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import { Container } from 'react-bootstrap';
+import Index from '../Reducer';
+import UseRefarence from '../UseRefarence';
 import ControlledInputs from './Controlled-inputs';
 import Toggole from './Toggole';
 
@@ -44,12 +46,15 @@ export default function MulpolReturns() {
     <div className='mt-5'>
         <Container>
        <h1>Multipol Returns</h1>
-<h3> Hear  wrong api provide then you see loding Component atherwige return true</h3>
+       <h3> Hear  wrong api provide then you see loding Component atherwige return true</h3>
        <h1>{user}</h1> <hr/>
 
        <Toggole/>
        <ControlledInputs/>
+       <UseRefarence/>
+       <Index/>
        </Container>
+
     </div>
   )
 }
