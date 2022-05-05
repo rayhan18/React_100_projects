@@ -8,6 +8,9 @@ import UsestateError from '../Components/AdvamceHook/UsestateError'
 import HooksPage from '../Pages/HooksPage'
 import Loginwithcontext from '../Components/Login/Loginwithcontext'
 import MulpolReturns from '../Components/AdvamceHook/UseEffect/MulpolReturns'
+import ImageGallary from '../Components/ImgGallary/ImgGallary'
+import PasswordGenarator from '../Components/PasswordGenerator/PasswordGenarator'
+
 export default class Routs extends Component {
   render() {
     return (
@@ -20,7 +23,9 @@ export default class Routs extends Component {
             <Route  path="/tour" element={<TurePage/>}/>
             <Route  path="/sidebar" element={<Sidebar/>}/>
             <Route  path="/hooks" element={<HooksPage/>}/>
-            <Route  path="/userlogin" element={<MulpolReturns/>}/>
+            <Route  path="/multipol-return" element={<MulpolReturns/>}/>
+            <Route  path="/image-gallery" element={<ImageGallary/>}/>
+            <Route  path="/password-generator" element={<PasswordGenarator/>}/>
         </Routes>
       </>
     )

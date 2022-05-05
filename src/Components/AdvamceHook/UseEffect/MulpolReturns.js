@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Index from '../Reducer';
 import UseRefarence from '../UseRefarence';
 import ControlledInputs from './Controlled-inputs';
+import Props from './Props';
 import Toggole from './Toggole';
 
 
@@ -50,9 +51,10 @@ export default function MulpolReturns() {
        <h1>{user}</h1> <hr/>
 
        <Toggole/>
-       <ControlledInputs/>
-       <UseRefarence/>
-       <Index/>
+       <ControlledInputs/><hr/>
+       <UseRefarence/><hr/>
+       <Index/><hr/>
+       <Props/><hr/>
        </Container>
 
     </div>

@@ -31,15 +31,29 @@ componentDidMount(){
         id:3 ,
         name:'Side bar',
         link:'/sidebar',
-        pic:'',
+        imageurl:'https://picsum.photos/id/1015/1000/600/',
         discreption:' Some quick example text to build on the card title and make up the bulk of .'
       },
       {
         id:4 ,
-        name:'BarthDay Reminder',
+        name:'Images galary',
+        link:'/image-gallery',
+        imageurl:'https://picsum.photos/id/1019/1000/600/',
+        discreption:' Use image gallery packege  .'
+      },
+      {
+        id:5 ,
+        name:'Password generator',
+        link:'/password-generator',
+        imageurl:'',
+        discreption:' Use webvitals .'
+      },
+      {
+        id:6 ,
+        name:'comming soon',
         link:'',
-        pic:'',
-        discreption:' Some quick example text to build on the card title and make up the bulk of .'
+        imageurl:'',
+        discreption:' Use webvitals .'
       }
     ]
     return (
@@ -51,7 +65,7 @@ componentDidMount(){
                 return(
           <Col sm={12} md={4} lg={3} className=" d-flex" key={item.id}>
            
-                  <Card style={{ width: '18rem' }} >
+                  <Card style={{ width: '18rem' }} className="mb-3">
                     <Link to={item.link}>
                   <Card.Img variant="top" src={item.imageurl}/>
                   {/* <Card.Img variant="top" src={bday}/> */}

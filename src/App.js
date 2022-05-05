@@ -1,9 +1,11 @@
 //import logo from './logo.svg';
-import './App.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter} from 'react-router-dom'
 import  Routs  from './Approuts/Routs';
 import Appnavigation from './Components/Navigation/Appnavigation'
+import "react-image-gallery/styles/css/image-gallery.css";
+
 function App() {
   return (
     < >
