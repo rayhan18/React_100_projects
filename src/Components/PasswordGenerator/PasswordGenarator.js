@@ -106,19 +106,19 @@ const PasswordGenarator = () => {
           </div>
           <div className="form-group">
             <label htmlFor="uppercase-letters">Add Uppercase Letters</label>
-            <input checked={includeUpperCase} onChange={(e) => setIncludeUpperCase(e.target.checked)} type="checkbox" id="uppercase-letters" name="uppercase-letters" />
+            <input style={{width:'65px',height:'20px'}} checked={includeUpperCase} onChange={(e) => setIncludeUpperCase(e.target.checked)} type="checkbox" id="uppercase-letters" name="uppercase-letters" />
           </div>
           <div className="form-group">
             <label htmlFor="lowercase-letters">Add Lowercase Letters</label>
-            <input checked={includeLowerCase} onChange={(e) => setIncludeLowerCase(e.target.checked)} type="checkbox" id="lowercase-letters" name="lowercase-letters" />
+            <input style={{width:'65px',height:'20px'}} checked={includeLowerCase} onChange={(e) => setIncludeLowerCase(e.target.checked)} type="checkbox" id="lowercase-letters" name="lowercase-letters" />
           </div>
           <div className="form-group">
             <label htmlFor="include-numbers">Include Numbers</label>
-            <input checked={includeNumbers} onChange={(e) => setIncludeNumbers(e.target.checked)} type="checkbox" id="include-numbers" name="include-numbers" />
+            <input style={{width:'65px',height:'20px'}} checked={includeNumbers} onChange={(e) => setIncludeNumbers(e.target.checked)} type="checkbox" id="include-numbers" name="include-numbers" />
           </div>
           <div className="form-group">
             <label htmlFor="include-symbols">Include Symbols</label>
-            <input checked={includeSymbols} onChange={(e) => setIncludeSymbols(e.target.checked)} type="checkbox" id="include-symbols" name="include-symbols" />
+            <input style={{width:'65px',height:'20px'}} checked={includeSymbols} onChange={(e) => setIncludeSymbols(e.target.checked)} type="checkbox" id="include-symbols" name="include-symbols" />
           </div>
           <button onClick={handleGeneratePassword} className="generator__btn">
             Generate Password

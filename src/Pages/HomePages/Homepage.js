@@ -45,15 +45,15 @@ componentDidMount(){
         id:5 ,
         name:'Password generator',
         link:'/password-generator',
-        imageurl:'',
-        discreption:' Use webvitals .'
+        imageurl:'https://picsum.photos/id/1015/1000/600/',
+        discreption:' Use Father icon, React toastify.'
       },
       {
         id:6 ,
-        name:'comming soon',
-        link:'',
+        name:'Dropdown',
+        link:'/dropdown',
         imageurl:'',
-        discreption:' Use webvitals .'
+        discreption:' Dropdown item with Hooks .'
       }
     ]
     return (

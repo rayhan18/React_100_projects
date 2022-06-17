@@ -10,6 +10,7 @@ import Loginwithcontext from '../Components/Login/Loginwithcontext'
 import MulpolReturns from '../Components/AdvamceHook/UseEffect/MulpolReturns'
 import ImageGallary from '../Components/ImgGallary/ImgGallary'
 import PasswordGenarator from '../Components/PasswordGenerator/PasswordGenarator'
+import Dropdown from '../Components/Dropdown/Dropdown'
 
 export default class Routs extends Component {
   render() {
@@ -26,6 +27,7 @@ export default class Routs extends Component {
             <Route  path="/multipol-return" element={<MulpolReturns/>}/>
             <Route  path="/image-gallery" element={<ImageGallary/>}/>
             <Route  path="/password-generator" element={<PasswordGenarator/>}/>
+            <Route  path="/dropdown" element={<Dropdown/>}/>
         </Routes>
       </>
     )
