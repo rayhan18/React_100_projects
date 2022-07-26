@@ -11,6 +11,7 @@ import MulpolReturns from '../Components/AdvamceHook/UseEffect/MulpolReturns'
 import ImageGallary from '../Components/ImgGallary/ImgGallary'
 import PasswordGenarator from '../Components/PasswordGenerator/PasswordGenarator'
 import Dropdown from '../Components/Dropdown/Dropdown'
+import TodoList from '../Components/TodoList/TodoList'
 
 export default class Routs extends Component {
   render() {
@@ -28,6 +29,7 @@ export default class Routs extends Component {
             <Route  path="/image-gallery" element={<ImageGallary/>}/>
             <Route  path="/password-generator" element={<PasswordGenarator/>}/>
             <Route  path="/dropdown" element={<Dropdown/>}/>
+            <Route  path="/todos" element={<TodoList/>}/>
         </Routes>
       </>
     )
