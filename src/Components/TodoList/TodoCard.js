@@ -13,7 +13,7 @@ export default function TodoCard({taskObj ,index,deleteTask ,updateArray}) {
         setModal(!modal)
        }
      const updateTask=(obj)=>{
-        updateArray(obj ,index)
+        updateArray(index,obj )
      }
      
   return (

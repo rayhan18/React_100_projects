@@ -14,12 +14,12 @@ const handelChange=(e)=>{
     setDescription(value)
  }
 }
-    const handleupdate=(e)=>{
-        e.preventDefualt()
+    const handleupdate=(e )=>{
+        e.preventDefault()
         let taskobj= {}
         taskobj["taskName"] = taskName
         taskobj["discreption"] = discreption
-        updateTask(taskobj)
+        updateTask(taskobj )
         
     }
 
@@ -48,7 +48,7 @@ const handelChange=(e)=>{
   </FormGroup>
   <FormGroup>
     <Label for="exampleText">
-      Text Area
+      Text Ariea
     </Label>
     <Input
       id="exampleText"
@@ -62,7 +62,7 @@ const handelChange=(e)=>{
          </Form>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={handleupdate}>update</Button>{' '}
+          <Button color="primary" onClick={(e)=>handleupdate(e)}>update</Button>{' '}
           <Button color="secondary" onClick={toggle}>Cancel</Button>
         </ModalFooter>
       </Modal>

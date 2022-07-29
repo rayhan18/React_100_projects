@@ -4,12 +4,15 @@ import Modals from './Modals';
 import TodoCard from './TodoCard';
 
 export default function TodoList() {
-  const [modal, setModal] = useState(false);
+     const [modal, setModal] = useState(false);
     const [taskList, setTaskList] = useState([]);
  
  useEffect(()=>{
   const items = JSON.parse(localStorage.getItem('items'));
+  if(items){
     setTaskList(items)
+  }
+   
  },[])
   
  const toggle=()=>{
@@ -48,11 +51,11 @@ const updateArray=(index ,obj)=>{
         <Button  onClick={()=> setModal(true)} className="w-25 mx-auto">Creat task</Button>
 
 
-        <div className='task-item'>
-           
+        <div className='task-item'>          
            {
-            taskList.map((obj , index)=> <TodoCard taskObj={obj} index={index}
-            deleteTask={deleteTask} updateArray={updateArray}/>)
+           //console.log(taskList ,'tttt')  
+              taskList.map((obj , index )=> <TodoCard taskObj={obj} index={index }
+              deleteTask={deleteTask} updateArray={updateArray} key={index}/>)        
            }
           </div>
         </Row>
