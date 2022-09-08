@@ -25,7 +25,7 @@ export default function TodoList() {
      localStorage.setItem('items', JSON.stringify(temp));
      setTaskList(temp)
      setModal(false)
-     console.log(temp)
+     //console.log(temp)
   }
 
 const deleteTask=(index)=>{

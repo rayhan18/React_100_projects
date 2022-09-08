@@ -12,6 +12,13 @@ import ImageGallary from '../Components/ImgGallary/ImgGallary'
 import PasswordGenarator from '../Components/PasswordGenerator/PasswordGenarator'
 import Dropdown from '../Components/Dropdown/Dropdown'
 import TodoList from '../Components/TodoList/TodoList'
+import QuizePage from '../Pages/quizePage/QuizePage'
+import QuizeInstraction from '../Components/QuizeApp/QuizeInstraction'
+import Play from '../Components/QuizeApp/quize/Play'
+import Home from '../Pages/movipage/Home'
+import MoviDetails from '../Pages/movipage/moviDetails/MoviDetails'
+import MovieList from '../Components/moviList/MoviList'
+
 
 export default class Routs extends Component {
   render() {
@@ -30,6 +37,12 @@ export default class Routs extends Component {
             <Route  path="/password-generator" element={<PasswordGenarator/>}/>
             <Route  path="/dropdown" element={<Dropdown/>}/>
             <Route  path="/todos" element={<TodoList/>}/>
+            <Route  path="/quize-app" element={<QuizePage/>}/>
+            <Route  path="/play/instraction" element={<QuizeInstraction/>}/>
+            <Route  path="/play/quize" element={<Play/>}/>
+            <Route path="/movihomepage" element={<Home/>}></Route>
+            <Route path="movie/:id" element={<MoviDetails/>}></Route>
+              <Route path="movies/:type" element={<MovieList/>}></Route>
         </Routes>
       </>
     )

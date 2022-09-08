@@ -1,0 +1,15 @@
+**todo list sodo code**
+
+1.creat veiw with task button
+2.creat modal open function
+
+2.button click open modal with input form
+3.chatch input data and set data localstorege
+
+5.get data localstorege view whith todo card save
+6.add in card update and delete button
+7.creat delete function
+8.creat update modal
+9.creat update function 
+10.update localstorege 
+11.errror handeling

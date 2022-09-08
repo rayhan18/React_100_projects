@@ -57,10 +57,24 @@ componentDidMount(){
       },
       {
         id:7 ,
-        name:'todo list',
+        name:'Todo list',
         link:'/todos',
         imageurl:'',
         discreption:'Todo list .'
+      },
+      {
+        id:8 ,
+        name:'Quize App',
+        link:'/quize-app',
+        imageurl:"https://media.istockphoto.com/vectors/quiz-time-flat-vector-lettering-vector-id1171765499?k=20&m=1171765499&s=612x612&w=0&h=s99INCuNzJXmLMh7LYOQZGUfCMPgvabUcqI0xGDQKSY=",
+        discreption:'Quize App.'
+      },
+      {
+        id:9,
+        name:'Movi app',
+        link:'/movihomepage',
+        imageurl:"https://media.istockphoto.com/vectors/quiz-time-flat-vector-lettering-vector-id1171765499?k=20&m=1171765499&s=612x612&w=0&h=s99INCuNzJXmLMh7LYOQZGUfCMPgvabUcqI0xGDQKSY=",
+        discreption:'Movi app with api.'
       }
     ]
     return (
